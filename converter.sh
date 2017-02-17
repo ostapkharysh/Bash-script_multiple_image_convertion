@@ -32,7 +32,7 @@ do
   if [ ${image: -4} == ".jpg" ] || [ ${image: -5} == ".jpeg" ] || 
      [ ${image: -4} == ".bmp" ] || [ ${image: -4} == ".png" ] || [ ${image: -4} == ".gif" ];
      then
-         j=`printf "%0*d" $indices $count` # creates startng uniqe number
+         j=`printf "%0*d" $indices $count` # creates starting uniqe number
          let count+=1 
          if [ ${image: -4} == ".gif" ] ;
              then
