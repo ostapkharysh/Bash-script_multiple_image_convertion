@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd OpSys
+cd OpSys #default path
 declare count=0
 declare indices=8
 
@@ -36,7 +36,7 @@ do
          let count+=1 
          if [ ${image: -4} == ".gif" ] ;
              then
-                 convert -strip $image[5] "${today%}-$j.jpg" #converts one picture from .gif
+                 convert -strip $image[0] "${today%}-$j.jpg" #converts one picture from .gif
          else
              convert $image "${today%}-$j.jpg"
      #rm $image  # if removing image that was converted
