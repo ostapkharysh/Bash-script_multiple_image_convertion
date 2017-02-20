@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd OpSys #default path
+#default path is one where the file is run.
 declare count=0
 declare indices=8
 
